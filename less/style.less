@@ -380,6 +380,16 @@ h1, h2, h3 {
 .format-aside {
 	.colors( @aside, @aside-base );
 }
+.format-standard,
+.format-image,
+.format-gallery,
+.format-video,
+.format-audio,
+.format-chat {
+	.entry-content {
+		min-height: 200px;
+	}
+}
 .hentry.type-page,
 .hentry.error404,
 .hentry.no-results {
