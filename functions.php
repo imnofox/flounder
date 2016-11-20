@@ -209,3 +209,34 @@ add_filter( 'mce_css', 'flounder_mce_css' );
  * Implement the Custom Header feature
  */
 require( get_template_directory() . '/inc/custom-header.php' );
+
+/**
+ * Change order of image in captions
+ */
+
+ add_filter( 'img_caption_shortcode', 'flounder_caption', 10, 3 );
+
+ function flounder_caption( $empty, $attr, $content ){
+	$attr = shortcode_atts( array(
+		'id'      => '',
+		'align'   => 'alignnone',
+		'width'   => '',
+		'caption' => ''
+	), $attr );
+
+	if ( 1 > (int) $attr['width'] || empty( $attr['caption'] ) ) {
+		return '';
+	}
+
+	if ( $attr['id'] ) {
+		$attr['id'] = 'id="' . esc_attr( $attr['id'] ) . '" ';
+	}
+
+	return '<div ' . $attr['id']
+	. 'class="wp-caption ' . esc_attr( $attr['align'] ) . '" '
+	. 'style="max-width: ' . ( 10 + (int) $attr['width'] ) . 'px;">'
+	. '<p class="wp-caption-text">' . $attr['caption'] . '</p>'
+	. do_shortcode( $content )
+	. '</div>';
+
+ }
