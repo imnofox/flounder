@@ -74,7 +74,7 @@ function flounder_setup() {
 	/**
 	 * Add an image size that does not exceed content width
 	 */
-	add_image_size( 'feature', 500 );
+	add_image_size( 'feature', 638 );
 
 	/*
 	 * This theme styles the visual editor to resemble the theme style,
