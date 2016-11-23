@@ -60,6 +60,11 @@ function flounder_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	/**
+	 * Enable support for Title Tag
+	 */
+	add_theme_support( 'title-tag' );
+
+	/**
 	 * This theme uses wp_nav_menu() in one location.
 	 */
 	register_nav_menus( array(
