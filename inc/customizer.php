@@ -18,7 +18,7 @@ function flounder_customize_register( $wp_customize ) {
 	$wp_customize->add_section( 'flounder_settings', array(
 		'title'       => __('Layout', 'flounder'),
 		'priority'    => 35,
-		'description' => __( "In the classic layout, the sidebar is responsive and moves to the right side if the screen is larger than 1300px wide. You can force it to always stay left by choosing 'Sidebar always on left'", 'museum' ),
+		'description' => __( "In the classic layout, the sidebar is responsive and moves to the right side if the screen is larger than 1300px wide. You can force it to always stay left by choosing 'Sidebar always on left'", 'flounder' ),
 	) );
 
 	$wp_customize->add_setting( 'flounder_layout', array(

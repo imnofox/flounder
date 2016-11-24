@@ -78,24 +78,24 @@ get_header();
 					?>
 
 					</div><!-- .entry-content -->
-					
+
 					<?php if ( is_singular() ) {
 						// If comments are open or we have at least one comment, load up the comment template
 						if ( comments_open() || '0' != get_comments_number() )
 							comments_template();
 					} else {
-						flounder_comment_link( '<div class="comment-links clearfix">', '</div>' ); 
+						flounder_comment_link( '<div class="comment-links clearfix">', '</div>' );
 					} ?>
-					
+
 				</div><!-- .entry-area -->
-				
+
 				<div class="entry-meta sidebar-bg"></div>
 				<footer class="entry-meta">
 					<i class="icon format-icon dashicons dashicons-format-image"></i>
 					<?php flounder_posted_on(); ?>
 					<?php
 						$metadata = wp_get_attachment_metadata();
-						
+
 						printf( '<div class="meta full-size"><a href="%1$s">%2$s &times; %3$s</a></div>',
 							esc_url( wp_get_attachment_url() ),
 							$metadata['width'],
@@ -109,14 +109,14 @@ get_header();
 						);
 					?>
 
-					<?php edit_post_link( __( 'Edit This', 'flounder' ), '<div class="meta edit-link">', '</div>' ); ?> 
+					<?php edit_post_link( __( 'Edit This', 'flounder' ), '<div class="meta edit-link">', '</div>' ); ?>
 
 				</footer><!-- .entry-meta -->
 			</article><!-- #post-<?php the_ID(); ?> -->
-			
+
 			<nav role="navigation" id="image-navigation" class="navigation image-navigation">
-				<div class="nav-previous"><?php previous_image_link( false, __( '<i class="icon inline  dashicons dashicons-arrow-left"></i> Previous', '_s' ) ); ?></div>
-				<div class="nav-next"><?php next_image_link( false, __( 'Next <i class="icon inline  dashicons dashicons-arrow-right"></i>', '_s' ) ); ?></div>
+				<div class="nav-previous"><?php previous_image_link( false, __( '<i class="icon inline  dashicons dashicons-arrow-left"></i> Previous', 'flounder' ) ); ?></div>
+				<div class="nav-next"><?php next_image_link( false, __( 'Next <i class="icon inline  dashicons dashicons-arrow-right"></i>', 'flounder' ) ); ?></div>
 			</nav><!-- #image-navigation -->
 
 		<?php endwhile; // end of the loop. ?>
