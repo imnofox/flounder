@@ -1,7 +1,10 @@
 jQuery(document).ready(function($) {
 	function stick() {
-		jQuery(".footer-inner:not(.stickable), .entry-header.entry-meta:not(.stickable)").addClass("stickable").stick_in_parent({
+		jQuery(".footer-inner:not(.stickable)").addClass("stickable").stick_in_parent({
 			parent: 'footer.entry-meta'
+		});
+		jQuery(".entry-header.entry-meta:not(.stickable)").addClass("stickable").stick_in_parent({
+			parent: '.entry-area'
 		});
 	}
 	stick();
