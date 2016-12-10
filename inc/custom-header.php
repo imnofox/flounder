@@ -176,4 +176,3 @@ function flounder_admin_header_image() { ?>
 	</div>
 <?php }
 endif; // flounder_admin_header_image
-

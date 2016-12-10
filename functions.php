@@ -65,6 +65,13 @@ function flounder_setup() {
 	add_theme_support( 'title-tag' );
 
 	/**
+	 * Enable support for Custom Backgrounds
+	 */
+	 add_theme_support( 'custom-background', array(
+			'default-color' => '#2c3e50'
+	 ) );
+
+	/**
 	 * This theme uses wp_nav_menu() in one location.
 	 */
 	register_nav_menus( array(
