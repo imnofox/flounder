@@ -55,37 +55,35 @@
 	<div class="entry-meta sidebar-bg"></div>
 	<?php if ( 'page' !== get_post_type() ): ?>
 	<footer class="entry-meta">
-		<div class="footer-inner">
-			<div class="footer-icon">
-				<i class="icon format-icon dashicons dashicons-format-<?php echo ( ''==get_post_format() )? 'standard': get_post_format(); if ( 'link' == get_post_format() ) echo ' dashicons-format-links'; ?>"></i>
-			</div>
-			<div class="footer-meta">
-				<?php if ( flounder_show_title() ) : // If we show the title, we need to put meta here. ?>
-					<?php flounder_posted_on(); ?>
-					<?php flounder_posted_by(); ?>
-					<?php
-						/* translators: used between list items, there is a space after the comma */
-						$categories_list = get_the_category_list( __( ', ', 'flounder' ) );
-						if ( $categories_list ) :
-					?>
-					<div class="meta cat-links">
-						<?php echo $categories_list; ?>
-					</div>
-					<?php endif; // End if categories ?>
+		<div class="footer-icon">
+			<i class="icon format-icon dashicons dashicons-format-<?php echo ( ''==get_post_format() )? 'standard': get_post_format(); if ( 'link' == get_post_format() ) echo ' dashicons-format-links'; ?>"></i>
+		</div>
+		<div class="footer-meta">
+			<?php if ( flounder_show_title() ) : // If we show the title, we need to put meta here. ?>
+				<?php flounder_posted_on(); ?>
+				<?php flounder_posted_by(); ?>
+				<?php
+					/* translators: used between list items, there is a space after the comma */
+					$categories_list = get_the_category_list( __( ', ', 'flounder' ) );
+					if ( $categories_list ) :
+				?>
+				<div class="meta cat-links">
+					<?php echo $categories_list; ?>
+				</div>
+				<?php endif; // End if categories ?>
 
-					<?php
-						/* translators: used between list items, there is a space after the comma */
-						$tags_list = get_the_tag_list( '', __( ', ', 'flounder' ) );
-						if ( $tags_list ) :
-					?>
-					<div class="meta tags-links">
-						<?php echo $tags_list; ?>
-					</div>
-					<?php endif; // End if $tags_list ?>
+				<?php
+					/* translators: used between list items, there is a space after the comma */
+					$tags_list = get_the_tag_list( '', __( ', ', 'flounder' ) );
+					if ( $tags_list ) :
+				?>
+				<div class="meta tags-links">
+					<?php echo $tags_list; ?>
+				</div>
+				<?php endif; // End if $tags_list ?>
 
-					<?php edit_post_link( __( 'Edit This', 'flounder' ), '<div class="meta edit-link">', '</div>' ); ?>
-				<?php endif; // End if flounder_show_title ?>
-			</div>
+				<?php edit_post_link( __( 'Edit This', 'flounder' ), '<div class="meta edit-link">', '</div>' ); ?>
+			<?php endif; // End if flounder_show_title ?>
 		</div>
 	</footer><!-- .entry-meta -->
 	<?php endif; ?>

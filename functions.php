@@ -116,9 +116,6 @@ function flounder_scripts() {
 	}
 	wp_enqueue_style( 'flounder-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'sticky-kit', get_template_directory_uri() . '/js/jquery.sticky-kit.min.js', array( 'jquery' ), null, true );
-	wp_enqueue_script( 'flounder-js', get_template_directory_uri() . '/js/flounder.js', array( 'jquery', 'sticky-kit' ), null, true );
-
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
