@@ -4,7 +4,7 @@
  * Author: Lachlan (imnofox), forked from Flounder by Kelly Dwan & Mel Choyce
  * Author URI: http://themes.redradar.net
  * Description: Turbot is a fork of Flounder, a flat, minimally styled theme for bloggers which features colorful support for post formats and a clean, responsive layout.
- * Version: 0.3.5
+ * Version: 0.4.0
  * License: GNU General Public License
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: flounder
@@ -471,6 +471,10 @@ object {
   /* Theme Footer (when set to scrolling) */
   display: none;
 }
+.infinite-loader .spinner div div {
+  background: #fff !important;
+  left: 0px !important;
+}
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
 .infinity-end.neverending .site-footer {
   display: block;
@@ -675,7 +679,8 @@ table td:last-child {
   background: red;
 }
 footer.entry-meta {
-  position: absolute;
+  position: sticky;
+  position: -webkit-sticky;
   overflow: hidden;
   top: 0;
   right: 0;
