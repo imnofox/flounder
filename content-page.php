@@ -16,11 +16,11 @@
 			<?php the_content(); ?>
 			<?php
 				wp_link_pages( array(
-					'before' => '<div class="page-links">' . __( 'Pages:', 'flounder' ),
+					'before' => '<div class="page-links">' . __( 'Pages:', 'turbot' ),
 					'after'  => '</div>',
 				) );
 			?>
-			<?php edit_post_link( __( 'Edit This', 'flounder' ), '<p class="edit-link">', '</p>' ); ?>
+			<?php edit_post_link( __( 'Edit This', 'turbot' ), '<p class="edit-link">', '</p>' ); ?>
 		</div><!-- .entry-content -->
 
 		<?php

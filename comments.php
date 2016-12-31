@@ -24,18 +24,18 @@ if ( post_password_required() )
 	<?php if ( have_comments() ) : ?>
 		<h2 class="comments-title">
 			<i class="icon dashicons dashicons-admin-comments"></i> <?php
-				printf( 
-					_nx( 'Read 1 comment', 'Read %1$s comments', get_comments_number(), 'comments title', 'flounder' ),
-					number_format_i18n( get_comments_number() ) 
+				printf(
+					_nx( 'Read 1 comment', 'Read %1$s comments', get_comments_number(), 'comments title', 'turbot' ),
+					number_format_i18n( get_comments_number() )
 				);
 			?>
 		</h2>
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-above" class="navigation-comment clear" role="navigation">
-			<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'flounder' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'flounder' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'flounder' ) ); ?></div>
+			<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'turbot' ); ?></h1>
+			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'turbot' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'turbot' ) ); ?></div>
 		</nav><!-- #comment-nav-before -->
 		<?php endif; // check for comment navigation ?>
 
@@ -53,9 +53,9 @@ if ( post_password_required() )
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-below" class="navigation-comment clear" role="navigation">
-			<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'flounder' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'flounder' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'flounder' ) ); ?></div>
+			<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'turbot' ); ?></h1>
+			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'turbot' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'turbot' ) ); ?></div>
 		</nav><!-- #comment-nav-below -->
 		<?php endif; // check for comment navigation ?>
 
@@ -65,16 +65,16 @@ if ( post_password_required() )
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() && '0' != get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
-		<h2 class="no-comments"><i class="icon no-bg dashicons dashicons-no-alt"></i><?php _e( 'Comments are closed.', 'flounder' ); ?></h2>
+		<h2 class="no-comments"><i class="icon no-bg dashicons dashicons-no-alt"></i><?php _e( 'Comments are closed.', 'turbot' ); ?></h2>
 	<?php endif; ?>
 
 	<?php comment_form( array(
 		// 'fields' => taken care of by flounder_comment_fields in extras.php
 		'comment_notes_before' => '',
 		'comment_notes_after' => '',
-		'title_reply' => '<i class="icon dashicons dashicons-plus"></i>'.__( 'Leave a Reply' ),
-		'title_reply_to' => '<i class="icon dashicons dashicons-plus"></i>'.__( 'Leave a Reply to %s' ),
-		'comment_field' => '<p class="comment-form-comment clearfix"><label class="screen-reader-text" for="comment">' . _x( 'Comment', 'noun', 'flounder' ) . '</label><textarea id="comment" name="comment" cols="45" rows="3" aria-required="true" placeholder="'. __( 'Enter your comment here&hellip;', 'flounder' ) .'"></textarea></p>',
+		'title_reply' => '<i class="icon dashicons dashicons-plus"></i>'.__( 'Leave a Reply', 'turbot' ),
+		'title_reply_to' => '<i class="icon dashicons dashicons-plus"></i>'.__( 'Leave a Reply to %s', 'turbot' ),
+		'comment_field' => '<p class="comment-form-comment clearfix"><label class="screen-reader-text" for="comment">' . _x( 'Comment', 'noun', 'turbot' ) . '</label><textarea id="comment" name="comment" cols="45" rows="3" aria-required="true" placeholder="'. __( 'Enter your comment here&hellip;', 'turbot' ) .'"></textarea></p>',
 	) ); ?>
 
 </div><!-- #comments -->

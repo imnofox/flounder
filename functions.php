@@ -47,7 +47,7 @@ function flounder_setup() {
 	 * If you're building a theme based on Flounder, use a find and replace
 	 * to change 'flounder' to the name of your theme in all the template files
 	 */
-	load_theme_textdomain( 'flounder', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'turbot', get_template_directory() . '/languages' );
 
 	/**
 	 * Add default posts and comments RSS feed links to head
@@ -75,7 +75,7 @@ function flounder_setup() {
 	 * This theme uses wp_nav_menu() in one location.
 	 */
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'flounder' ),
+		'primary' => __( 'Primary Menu', 'turbot' ),
 	) );
 
 	/**
@@ -102,7 +102,7 @@ add_action( 'after_setup_theme', 'flounder_setup' );
  */
 function flounder_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'flounder' ),
+		'name'          => __( 'Sidebar', 'turbot' ),
 		'id'            => 'sidebar-1',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
@@ -151,7 +151,7 @@ function flounder_fonts_url() {
 	 * supported by Source Sans Pro, translate this to 'off'. Do not translate
 	 * into your own language.
 	 */
-	$source_sans_pro = _x( 'on', 'Source Sans Pro font: on or off', 'flounder' );
+	$source_sans_pro = _x( 'on', 'Source Sans Pro font: on or off', 'turbot' );
 
 	if ( 'off' !== $source_sans_pro ) {
 		$font_families = array();

@@ -72,7 +72,7 @@ get_header();
 					<?php the_content(); ?>
 					<?php
 						wp_link_pages( array(
-							'before' => '<div class="page-links">' . __( 'Pages:', 'flounder' ),
+							'before' => '<div class="page-links">' . __( 'Pages:', 'turbot' ),
 							'after'  => '</div>',
 						) );
 					?>
@@ -109,14 +109,14 @@ get_header();
 						);
 					?>
 
-					<?php edit_post_link( __( 'Edit This', 'flounder' ), '<div class="meta edit-link">', '</div>' ); ?>
+					<?php edit_post_link( __( 'Edit This', 'turbot' ), '<div class="meta edit-link">', '</div>' ); ?>
 
 				</footer><!-- .entry-meta -->
 			</article><!-- #post-<?php the_ID(); ?> -->
 
 			<nav role="navigation" id="image-navigation" class="navigation image-navigation">
-				<div class="nav-previous"><?php previous_image_link( false, __( '<i class="icon inline  dashicons dashicons-arrow-left"></i> Previous', 'flounder' ) ); ?></div>
-				<div class="nav-next"><?php next_image_link( false, __( 'Next <i class="icon inline  dashicons dashicons-arrow-right"></i>', 'flounder' ) ); ?></div>
+				<div class="nav-previous"><?php previous_image_link( false, __( '<i class="icon inline  dashicons dashicons-arrow-left"></i> Previous', 'turbot' ) ); ?></div>
+				<div class="nav-next"><?php next_image_link( false, __( 'Next <i class="icon inline  dashicons dashicons-arrow-right"></i>', 'turbot' ) ); ?></div>
 			</nav><!-- #image-navigation -->
 
 		<?php endwhile; // end of the loop. ?>

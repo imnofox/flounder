@@ -17,7 +17,7 @@
 		<header class="entry-header clearfix entry-meta">
 			<?php flounder_posted_on(); ?>
 			<?php flounder_posted_by(); ?>
-			<?php edit_post_link( __( 'Edit This', 'flounder' ), '<div class="meta edit-link">', '</div>' ); ?>
+			<?php edit_post_link( __( 'Edit This', 'turbot' ), '<div class="meta edit-link">', '</div>' ); ?>
 		</header><!-- .entry-header -->
 
 		<?php endif; ?>
@@ -33,10 +33,10 @@
 						printf( '<div class="wp-caption-text">%s</div>', $thumb_post->post_excerpt );
 				?></div>
 			<?php endif; ?>
-			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'flounder' ) ); ?>
+			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'turbot' ) ); ?>
 			<?php
 				wp_link_pages( array(
-					'before' => '<div class="page-links">' . __( 'Pages:', 'flounder' ),
+					'before' => '<div class="page-links">' . __( 'Pages:', 'turbot' ),
 					'after'  => '</div>',
 				) );
 			?>
@@ -64,7 +64,7 @@
 				<?php flounder_posted_by(); ?>
 				<?php
 					/* translators: used between list items, there is a space after the comma */
-					$categories_list = get_the_category_list( __( ', ', 'flounder' ) );
+					$categories_list = get_the_category_list( __( ', ', 'turbot' ) );
 					if ( $categories_list ) :
 				?>
 				<div class="meta cat-links">
@@ -74,7 +74,7 @@
 
 				<?php
 					/* translators: used between list items, there is a space after the comma */
-					$tags_list = get_the_tag_list( '', __( ', ', 'flounder' ) );
+					$tags_list = get_the_tag_list( '', __( ', ', 'turbot' ) );
 					if ( $tags_list ) :
 				?>
 				<div class="meta tags-links">
@@ -82,7 +82,7 @@
 				</div>
 				<?php endif; // End if $tags_list ?>
 
-				<?php edit_post_link( __( 'Edit This', 'flounder' ), '<div class="meta edit-link">', '</div>' ); ?>
+				<?php edit_post_link( __( 'Edit This', 'turbot' ), '<div class="meta edit-link">', '</div>' ); ?>
 			<?php endif; // End if flounder_show_title ?>
 		</div>
 	</footer><!-- .entry-meta -->

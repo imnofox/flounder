@@ -40,7 +40,7 @@
 		</a>
 
 		<nav id="site-navigation" class="navigation-main" role="navigation">
-			<a class="screen-reader-text skip-link" href="#content"><?php _e( 'Skip to content', 'flounder' ); ?></a>
+			<a class="screen-reader-text skip-link" href="#content"><?php _e( 'Skip to content', 'turbot' ); ?></a>
 
 			<?php wp_nav_menu( array(
 				'theme_location' => 'primary',

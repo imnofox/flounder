@@ -31,7 +31,7 @@ function flounder_content_nav( $nav_id ) {
 
 	?>
 	<nav role="navigation" id="<?php echo esc_attr( $nav_id ); ?>" class="<?php echo $nav_class; ?>">
-		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'flounder' ); ?></h1>
+		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'turbot' ); ?></h1>
 
 	<?php if ( is_single() ) : // navigation links for single posts ?>
 
@@ -41,11 +41,11 @@ function flounder_content_nav( $nav_id ) {
 	<?php elseif ( $wp_query->max_num_pages > 1 && ( is_home() || is_archive() || is_search() ) ) : // navigation links for home, archive, and search pages ?>
 
 		<?php if ( get_next_posts_link() ) : ?>
-		<div class="nav-previous"><?php next_posts_link( __( '<i class="icon inline dashicons dashicons-arrow-left"></i> Older posts', 'flounder' ) ); ?></div>
+		<div class="nav-previous"><?php next_posts_link( __( '<i class="icon inline dashicons dashicons-arrow-left"></i> Older posts', 'turbot' ) ); ?></div>
 		<?php endif; ?>
 
 		<?php if ( get_previous_posts_link() ) : ?>
-		<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <i class="icon inline dashicons dashicons-arrow-right"></i>', 'flounder' ) ); ?></div>
+		<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <i class="icon inline dashicons dashicons-arrow-right"></i>', 'turbot' ) ); ?></div>
 		<?php endif; ?>
 
 	<?php endif; ?>
@@ -68,7 +68,7 @@ function flounder_comment( $comment, $args, $depth ) {
 		case 'trackback' :
 	?>
 	<li class="post pingback">
-		<p><?php _e( 'Pingback:', 'flounder' ); ?> <?php comment_author_link(); ?></p>
+		<p><?php _e( 'Pingback:', 'turbot' ); ?> <?php comment_author_link(); ?></p>
 	<?php
 			break;
 		default :
@@ -85,12 +85,12 @@ function flounder_comment( $comment, $args, $depth ) {
 					<?php 
 					// Older than a week, show date; otherwise show __ time ago.
 					if ( current_time( 'timestamp' ) - get_comment_time( 'U' ) > 604800 ) {
-						$time = sprintf( _x( '%1$s at %2$s', '1: date, 2: time', 'flounder' ), get_comment_date(), get_comment_time() );
+						$time = sprintf( _x( '%1$s at %2$s', '1: date, 2: time', 'turbot' ), get_comment_date(), get_comment_time() );
 					} else {
-						$time = sprintf( __( '%1$s ago', 'flounder' ), human_time_diff( get_comment_time( 'U' ), current_time( 'timestamp' ) ) );
+						$time = sprintf( __( '%1$s ago', 'turbot' ), human_time_diff( get_comment_time( 'U' ), current_time( 'timestamp' ) ) );
 					}
 					printf(
-						__( 'posted %1$s by %2$s', 'flounder' ), 
+						__( 'posted %1$s by %2$s', 'turbot' ), 
 						'<time datetime="'. get_comment_time( 'c' ) .'">'. $time .'</time>',
 						sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) 
 					); ?>
@@ -100,7 +100,7 @@ function flounder_comment( $comment, $args, $depth ) {
 							printf(
 								'<a href="%1$s">%2$s</a>',
 								esc_url( get_comment_link( $comment->comment_parent ) ),
-								sprintf( __( 'in reply to %s', 'flounder' ), get_comment_author( $comment->comment_parent ) )
+								sprintf( __( 'in reply to %s', 'turbot' ), get_comment_author( $comment->comment_parent ) )
 							);
 						}
 						comment_reply_link( array_merge( $args, array(
@@ -112,7 +112,7 @@ function flounder_comment( $comment, $args, $depth ) {
 					?>
 				</div><!-- .comment-author .vcard -->
 				<?php if ( $comment->comment_approved == '0' ) : ?>
-					<em><?php _e( 'Your comment is awaiting moderation.', 'flounder' ); ?></em>
+					<em><?php _e( 'Your comment is awaiting moderation.', 'turbot' ); ?></em>
 				<?php endif; ?>
 			</footer>
 		</article><!-- #comment-## -->
@@ -142,7 +142,7 @@ function flounder_posted_by() {
 	printf(
 		'<div class="author meta vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></div>',
 		esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-		esc_attr( sprintf( __( 'View all posts by %s', 'flounder' ), get_the_author() ) ),
+		esc_attr( sprintf( __( 'View all posts by %s', 'turbot' ), get_the_author() ) ),
 		get_the_author()
 	);
 }
@@ -157,8 +157,8 @@ function flounder_comment_link( $before = '', $after = '', $echo = true ) {
 	ob_start();
 	if ( ! empty( $before ) )
 		echo $before;
-	comments_popup_link( '<i class="icon dashicons dashicons-admin-comments"></i>'.__( 'No comments', 'flounder' ), '<i class="icon dashicons dashicons-admin-comments"></i>'.__( 'Read 1 Comment', 'flounder' ), '<i class="icon dashicons dashicons-admin-comments"></i>'.__( 'Read % Comments', 'flounder' ), 'read alignleft', '' );
-	printf( '<a href="%s" class="add alignright"><i class="icon dashicons dashicons-plus"></i>%s</a>', get_permalink() . '#respond', __( 'Add a comment', 'flounder' ) );
+	comments_popup_link( '<i class="icon dashicons dashicons-admin-comments"></i>'.__( 'No comments', 'turbot' ), '<i class="icon dashicons dashicons-admin-comments"></i>'.__( 'Read 1 Comment', 'turbot' ), '<i class="icon dashicons dashicons-admin-comments"></i>'.__( 'Read % Comments', 'turbot' ), 'read alignleft', '' );
+	printf( '<a href="%s" class="add alignright"><i class="icon dashicons dashicons-plus"></i>%s</a>', get_permalink() . '#respond', __( 'Add a comment', 'turbot' ) );
 	if ( ! empty( $after ) )
 		echo $after;
 	if ( $echo ) {
