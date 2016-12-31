@@ -1,3 +1,5 @@
+@import '_mixins';
+
 /* @group WHOLE PAGE */
 #page {
 	margin: 1em auto 0;
@@ -52,6 +54,9 @@
 	margin: 0 26.4705882% 0 0;
 	padding: 20px 30px;
 }
+.entry-header.entry-meta {
+	.sticky();
+}
 .entry-content,
 .entry-summary,
 .comment-links,
@@ -83,10 +88,8 @@
 	background: red;
 }
 footer.entry-meta {
-	position: sticky;
-	position: -webkit-sticky;
+	.sticky();
 	overflow: hidden;
-	top: 0;
 	right: 0;
 	z-index: 10;
 	width: 26.4705882%;

@@ -203,3 +203,13 @@
   opacity: @opacity / 100;
   filter: e(%("alpha(opacity=%d)", @opacity));
 }
+
+.sticky() {
+  // `position: sticky` will be supported in Chrome 56, to be released ~Jan 31st
+  // (https://www.chromestatus.com/feature/6190250464378880)
+  // It's already working in Firefox, Safari, and Opera.
+  // IE & Edge are totally unsupported.
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}

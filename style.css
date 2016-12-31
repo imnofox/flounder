@@ -651,6 +651,12 @@ table td:last-child {
   margin: 0 26.4705882% 0 0;
   padding: 20px 30px;
 }
+.entry-header.entry-meta {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  /*! Not styled in this theme. */
+}
 .entry-content,
 .entry-summary,
 .comment-links,
@@ -681,8 +687,9 @@ table td:last-child {
 footer.entry-meta {
   position: sticky;
   position: -webkit-sticky;
-  overflow: hidden;
   top: 0;
+  /*! Not styled in this theme. */
+  overflow: hidden;
   right: 0;
   z-index: 10;
   width: 26.4705882%;
