@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features
  *
- * @package Flounder
+ * @package Turbot
  */
 
 if ( ! function_exists( 'flounder_content_nav' ) ) :

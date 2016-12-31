@@ -4,7 +4,7 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package Flounder
+ * @package Turbot
  */
 
 get_header(); ?>
@@ -48,7 +48,7 @@ get_header(); ?>
 							_e( 'Asides', 'turbot' );
 
 						elseif ( is_tax( 'post_format', 'post-format-image' ) ) :
-							_e( 'Images', 'flounder');
+							_e( 'Images', 'turbot');
 
 						elseif ( is_tax( 'post_format', 'post-format-video' ) ) :
 							_e( 'Videos', 'turbot' );

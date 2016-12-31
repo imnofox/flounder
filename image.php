@@ -2,7 +2,7 @@
 /**
  * The template for displaying image attachments.
  *
- * @package Flounder
+ * @package Turbot
  */
 
 get_header();

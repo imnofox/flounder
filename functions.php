@@ -2,7 +2,7 @@
 /**
  * Flounder functions and definitions
  *
- * @package Flounder
+ * @package Turbot
  */
 
 /**
@@ -45,7 +45,7 @@ function flounder_setup() {
 	 * Make theme available for translation
 	 * Translations can be filed in the /languages/ directory
 	 * If you're building a theme based on Flounder, use a find and replace
-	 * to change 'flounder' to the name of your theme in all the template files
+	 * to change 'turbot' to the name of your theme in all the template files
 	 */
 	load_theme_textdomain( 'turbot', get_template_directory() . '/languages' );
 

@@ -2,7 +2,7 @@
 /**
  * The template for displaying Search Results pages.
  *
- * @package Flounder
+ * @package Turbot
  */
 
 get_header(); ?>

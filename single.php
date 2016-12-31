@@ -2,7 +2,7 @@
 /**
  * The Template for displaying all single posts.
  *
- * @package Flounder
+ * @package Turbot
  */
 
 get_header(); ?>

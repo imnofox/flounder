@@ -3,7 +3,7 @@
  * Custom Header support
  * http://codex.wordpress.org/Custom_Headers
  *
- * @package Flounder
+ * @package Turbot
  */
 
 /**
@@ -15,7 +15,7 @@
  * @uses flounder_admin_header_style()
  * @uses flounder_admin_header_image()
  *
- * @package Flounder
+ * @package Turbot
  */
 function flounder_custom_header_setup() {
 	$args = array(
