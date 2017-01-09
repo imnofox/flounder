@@ -24,6 +24,10 @@ Dashicons is licensed under GPLv2, or any later version with font exception
 -------------------------------------------------------------
 == Changelog
 -------------------------------------------------------------
+Version 0.4.3
+* Set content width to 638px, matching earlier changes
+* Adds bottom margins to local wordpress videos
+
 Version 0.2.4
 * Add sanitization to the customizer option
 * Fix too-small font size on mobile (<500px)
