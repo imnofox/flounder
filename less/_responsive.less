@@ -3,7 +3,13 @@
 	#page {
 		max-width: 1240px;
 	}
-	.entry-header,
+	.entry-header {
+		margin: 0 20.4% 0 0;
+		/*
+		20.5% works great usually, but at least in Firefox on Windows this left a tiny gap.
+		This fixes it, without affecting other browsers
+		*/
+	}
 	.entry-content,
 	.entry-summary,
 	.comment-links,

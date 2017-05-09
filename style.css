@@ -2835,7 +2835,9 @@ li.comment li.comment .comment-avatar img {
   #page {
     max-width: 1240px;
   }
-  .entry-header,
+  .entry-header {
+    margin: 0 20.4% 0 0;
+  }
   .entry-content,
   .entry-summary,
   .comment-links,
