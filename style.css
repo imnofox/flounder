@@ -1062,6 +1062,9 @@ input[type='search'] {
   float: left;
   margin: 0;
 }
+.entry-header em {
+  font-style: bold;
+}
 .entry-meta .meta {
   display: block;
   margin: 0 0 2px;
@@ -2837,6 +2840,10 @@ li.comment li.comment .comment-avatar img {
   }
   .entry-header {
     margin: 0 20.4% 0 0;
+    /*
+		20.5% works great usually, but at least in Firefox on Windows this left a tiny gap.
+		This fixes it, without affecting other browsers
+		*/
   }
   .entry-content,
   .entry-summary,
