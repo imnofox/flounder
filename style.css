@@ -1063,7 +1063,7 @@ input[type='search'] {
   margin: 0;
 }
 .entry-header em {
-  font-style: bold;
+  font-weight: bold;
 }
 .entry-meta .meta {
   display: block;
