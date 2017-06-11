@@ -24,9 +24,10 @@ Dashicons is licensed under GPLv2, or any later version with font exception
 -------------------------------------------------------------
 == Changelog
 -------------------------------------------------------------
-Next version 0.4.4?
+version 0.4.4
 * Fix formatting of post headers in Firefox on Windows
 * Adds bottom margins to local wordpress videos when in the editor, to match 0.4.3 changes
+* Makes emphasis in psot titles also bold (<em>)
 
 Version 0.4.3
 * Set content width to 638px, matching earlier changes
