@@ -24,6 +24,10 @@ Dashicons is licensed under GPLv2, or any later version with font exception
 -------------------------------------------------------------
 == Changelog
 -------------------------------------------------------------
+version 0.5.0
+* Fix font weights on emphasised text
+* Makes featured images fill the article width to look more featured
+
 version 0.4.4
 * Fix formatting of post headers in Firefox on Windows
 * Adds bottom margins to local wordpress videos when in the editor, to match 0.4.3 changes
