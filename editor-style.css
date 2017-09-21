@@ -461,6 +461,9 @@ object {
   /* Theme Footer (when set to scrolling) */
   display: none;
 }
+.infinite-loader .spinner {
+  left: 50px !important;
+}
 .infinite-loader .spinner div div {
   background: #fff !important;
   left: 0px !important;
