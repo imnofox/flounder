@@ -4,7 +4,7 @@
  * Author: Lachlan (imnofox), forked from Flounder by Kelly Dwan & Mel Choyce
  * Author URI: http://themes.redradar.net
  * Description: Turbot is a fork of Flounder, a flat, minimally styled theme for bloggers which features colorful support for post formats and a clean, responsive layout.
- * Version: 0.5.2
+ * Version: 0.5.3
  * License: GNU General Public License
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: turbot
@@ -484,6 +484,15 @@ object {
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
 .infinity-end.neverending .site-footer {
   display: block;
+}
+/* =Jetpack
+----------------------------------------------- */
+/* Jetpack sharing buttons */
+#content div.sharedaddy,
+#main div.sharedaddy,
+div.sharedaddy {
+  margin: 0 -30px;
+  padding: 0 30px;
 }
 /**
  * Colors Mixin. All post-type specific colors are
@@ -1272,6 +1281,7 @@ h3 .dashicons-plus {
 }
 .hentry {
   background: #c7eee6;
+  /* Jetpack sharing buttons */
 }
 .hentry button,
 .hentry input[type='submit'],
@@ -1380,8 +1390,15 @@ h3 .dashicons-plus {
   color: #16a085;
   background: #c7eee6;
 }
+.hentry #content div.sharedaddy,
+.hentry #main div.sharedaddy,
+.hentry div.sharedaddy {
+  color: #c7eee6;
+  background: #28c1a3;
+}
 .format-image {
   background: #c7f0d8;
+  /* Jetpack sharing buttons */
 }
 .format-image button,
 .format-image input[type='submit'],
@@ -1490,8 +1507,15 @@ h3 .dashicons-plus {
   color: #27ae60;
   background: #c7f0d8;
 }
+.format-image #content div.sharedaddy,
+.format-image #main div.sharedaddy,
+.format-image div.sharedaddy {
+  color: #c7f0d8;
+  background: #42c67a;
+}
 .format-gallery {
   background: #c7e0f0;
+  /* Jetpack sharing buttons */
 }
 .format-gallery button,
 .format-gallery input[type='submit'],
@@ -1600,8 +1624,15 @@ h3 .dashicons-plus {
   color: #2980b9;
   background: #c7e0f0;
 }
+.format-gallery #content div.sharedaddy,
+.format-gallery #main div.sharedaddy,
+.format-gallery div.sharedaddy {
+  color: #c7e0f0;
+  background: #4c98c9;
+}
 .format-link {
   background: #f2dcfa;
+  /* Jetpack sharing buttons */
 }
 .format-link button,
 .format-link input[type='submit'],
@@ -1710,8 +1741,15 @@ h3 .dashicons-plus {
   color: #8e44ad;
   background: #f2dcfa;
 }
+.format-link #content div.sharedaddy,
+.format-link #main div.sharedaddy,
+.format-link div.sharedaddy {
+  color: #f2dcfa;
+  background: #a16db7;
+}
 .format-status {
   background: #fadcec;
+  /* Jetpack sharing buttons */
 }
 .format-status button,
 .format-status input[type='submit'],
@@ -1820,8 +1858,15 @@ h3 .dashicons-plus {
   color: #ad2f62;
   background: #fadcec;
 }
+.format-status #content div.sharedaddy,
+.format-status #main div.sharedaddy,
+.format-status div.sharedaddy {
+  color: #fadcec;
+  background: #c04f7d;
+}
 .format-video {
   background: #fadfdc;
+  /* Jetpack sharing buttons */
 }
 .format-video button,
 .format-video input[type='submit'],
@@ -1930,8 +1975,15 @@ h3 .dashicons-plus {
   color: #c0392b;
   background: #fadfdc;
 }
+.format-video #content div.sharedaddy,
+.format-video #main div.sharedaddy,
+.format-video div.sharedaddy {
+  color: #fadfdc;
+  background: #cb5e53;
+}
 .format-audio {
   background: #faeadc;
+  /* Jetpack sharing buttons */
 }
 .format-audio button,
 .format-audio input[type='submit'],
@@ -2040,8 +2092,15 @@ h3 .dashicons-plus {
   color: #d35400;
   background: #faeadc;
 }
+.format-audio #content div.sharedaddy,
+.format-audio #main div.sharedaddy,
+.format-audio div.sharedaddy {
+  color: #faeadc;
+  background: #f36c13;
+}
 .format-chat {
   background: #faeedc;
+  /* Jetpack sharing buttons */
 }
 .format-chat button,
 .format-chat input[type='submit'],
@@ -2150,8 +2209,15 @@ h3 .dashicons-plus {
   color: #d99425;
   background: #faeedc;
 }
+.format-chat #content div.sharedaddy,
+.format-chat #main div.sharedaddy,
+.format-chat div.sharedaddy {
+  color: #faeedc;
+  background: #d7a75a;
+}
 .format-quote {
   background: #dcfafa;
+  /* Jetpack sharing buttons */
 }
 .format-quote button,
 .format-quote input[type='submit'],
@@ -2260,8 +2326,15 @@ h3 .dashicons-plus {
   color: #21a3a4;
   background: #dcfafa;
 }
+.format-quote #content div.sharedaddy,
+.format-quote #main div.sharedaddy,
+.format-quote div.sharedaddy {
+  color: #dcfafa;
+  background: #36c1c2;
+}
 .format-aside {
   background: #eefadc;
+  /* Jetpack sharing buttons */
 }
 .format-aside button,
 .format-aside input[type='submit'],
@@ -2370,6 +2443,12 @@ h3 .dashicons-plus {
   color: #6fa623;
   background: #eefadc;
 }
+.format-aside #content div.sharedaddy,
+.format-aside #main div.sharedaddy,
+.format-aside div.sharedaddy {
+  color: #eefadc;
+  background: #89c438;
+}
 .format-standard .entry-content,
 .format-image .entry-content,
 .format-gallery .entry-content,
@@ -2382,6 +2461,7 @@ h3 .dashicons-plus {
 .hentry.error404,
 .hentry.no-results {
   background: #ecf0f1;
+  /* Jetpack sharing buttons */
 }
 .hentry.type-page button,
 .hentry.error404 button,
@@ -2569,6 +2649,18 @@ h3 .dashicons-plus {
 .hentry.no-results .navigation-comment a {
   color: #7f8c8d;
   background: #ecf0f1;
+}
+.hentry.type-page #content div.sharedaddy,
+.hentry.error404 #content div.sharedaddy,
+.hentry.no-results #content div.sharedaddy,
+.hentry.type-page #main div.sharedaddy,
+.hentry.error404 #main div.sharedaddy,
+.hentry.no-results #main div.sharedaddy,
+.hentry.type-page div.sharedaddy,
+.hentry.error404 div.sharedaddy,
+.hentry.no-results div.sharedaddy {
+  color: #ecf0f1;
+  background: #a0a0a0;
 }
 .hentry.type-page .mejs-controls button,
 .hentry.error404 .mejs-controls button,

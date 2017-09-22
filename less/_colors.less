@@ -123,4 +123,13 @@
 		color: @base;
 		background: @bg;
 	}
+
+	/* Jetpack sharing buttons */
+	#content div.sharedaddy,
+	#main div.sharedaddy,
+	div.sharedaddy {
+		@text: @bg;
+		color: @text;
+		background: desaturate( lighten( @base, 10% ), 10% );
+	}
 }

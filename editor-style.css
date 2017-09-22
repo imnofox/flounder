@@ -462,7 +462,7 @@ object {
   display: none;
 }
 .infinite-loader .spinner {
-  left: 50px !important;
+  left: 50% !important;
 }
 .infinite-loader .spinner div div {
   background: #fff !important;
