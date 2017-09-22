@@ -472,6 +472,21 @@ object {
 .infinity-end.neverending .site-footer {
   display: block;
 }
+/* =Jetpack
+----------------------------------------------- */
+/* Jetpack sharing buttons */
+#content div.sharedaddy,
+#main div.sharedaddy,
+div.sharedaddy {
+  margin: 0 -30px;
+  padding: 0 30px;
+}
+div.sharedaddy h3.sd-title {
+  margin: 1em 0;
+}
+div.sharedaddy h3.sd-title::before {
+  content: none;
+}
 /**
  * Colors Mixin. All post-type specific colors are
  * defined here. This is assumed to be called on the
