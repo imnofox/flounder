@@ -30,14 +30,14 @@
 		border-bottom: 2px solid lighten( @widget-header, 15% );
 
 		&:last-child {
-			border-bottom: none; 
+			border-bottom: none;
 		}
 
 		ul {
 			margin: 0;
 		}
 
-		li { 
+		li {
 			padding: 12px 0;
 			border-bottom: none;
 
@@ -76,7 +76,7 @@
 		}
 
 		li:last-child {
-			border-bottom: none; 
+			border-bottom: none;
 		}
 	}
 
@@ -94,6 +94,10 @@
 		border-color: fade( @bg, 25% );
 	}
 
+	#wp-calendar td {
+		padding: 0;
+	}
+
 	#wp-calendar th {
 		color: white;
 		background: @bg;
@@ -103,5 +107,6 @@
 		display: block;
 		color: white;
 		background: @widget-header;
+		padding: 2px 5px;
 	}
 }
